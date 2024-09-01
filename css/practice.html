@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Practice -->
+
+    <!-- Grid -->
+    <div class="container">
+      <h1 mt-5>Ebook Website</h1>
+      <button class="btn btn-primary">Check</button>
+      <button class="btn btn-secondary">Check</button>
+      <button class="btn btn-outline-primary">Check</button>
+      <button class="btn btn-outline-primary">Check</button>
+
+      <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate!</h1>
+      <div class="row">
+        <div class="col-md-3 border bg-light text-center p-2">Lorem ipsum dolor sit amet.</div>
+        <div class="col-md-3 border bg-light">Lorem ipsum dolor sit amet.</div>
+        <div class="col-md-3 border bg-light">Lorem ipsum dolor sit amet.</div>
+        <div class="col-md-3 border bg-light">Lorem ipsum dolor sit amet.</div>
+        <div class="col-md-3 border bg-light">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <!-- Simple Form -->
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" />
+      </div>
+      <div class="mb-3">
+        <label for="exampleDropdown" class="">Select an Option</label>
+        <select class="form-select" id="exampleDropdown" aria-label="Default select example">
+          <option selected>Choose an option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Simple Form in Grid -->
+    <div class="container mt-5 bg-transparent">
+      <form>
+        <div class="row border rounded-5 m-5 p-5">
+          <!-- Column 1 -->
+          <div class="col-lg-3 border mb-3">
+            <label for="input1" class="form-label">Input 1</label>
+            <input type="text" class="form-control" id="input1" />
+          </div>
+          <!-- Column 2 -->
+          <div class="col-lg-3 border mb-3">
+            <label for="input2" class="form-label fw-semibold">Input 2</label>
+            <input type="text" class="form-control" id="input2" />
+          </div>
+          <!-- Column 3 -->
+          <div class="col-lg-3 border mb-3">
+            <label for="input3" class="form-label">Input 3</label>
+            <select class="form-select" id="treatmentDropdown" aria-label="Default select example">
+              <option selected>Select Treatment</option>
+              <option value="1">Dermal Fillers</option>
+              <option value="2">Liposuction</option>
+              <option value="3">Laser Resurfacing</option>
+            </select>
+          </div>
+          <!-- Column 4 -->
+          <div class="col-lg-3 border mb-3 d-flex justify-content-center align-items-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

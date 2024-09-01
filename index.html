@@ -16,11 +16,11 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white fixed-top" id="navbar">
       <div class="container">
         <!-- brand -->
-        <a class="navbar-brand border rounded px-1" href="index.html">
-          <i class="bi bi-calendar2-heart-fill"></i> healthtrip
+        <a class="navbar-brand border rounded px-1 " href="index.html">
+          <i class="bi bi-calendar2-heart-fill text-secondary"></i> healthtrip
         </a>
 
 
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link px-3 mx-3 nav-link-custom rounded-2" href="#">Treatments</a>
+              <a class="nav-link px-3 mx-3 nav-link-custom rounded-2" href="#treatments">Treatments</a>
             </li>
             <li class="nav-item">
               <a class="nav-link px-3 mx-3 nav-link-custom rounded-2" href="#">Wellness</a>
@@ -40,11 +40,12 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
+              aria-expanded="false">Select Language</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><hr class="dropdown-divider"/>Arabic</li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
@@ -62,13 +63,13 @@
       <!-- Wrappers --> 
        <!-- justify-content-end -->
       <div class="d-flex flex-column bg-contain justify-content-lg-end" 
-      style="background-image: url('images/new/hero_image1.jpg'); height: 100vh;  background-size: cover; background-position: center;">
+      style="background-image: url('images/new/hero_image1.jpg'); height: 100vh;  
+      background-size: cover; background-position: center; ">
       <!-- background-size: contain; background-repeat: no-repeat; background-position: center; -->
-
       <div class="container text-center">
       
       <!-- Heading and Lead paragraph -->
-      <div class="row mt-8">
+      <div class="row mt-8" id="contact">
         <div class="col-md-10 mx-auto">
           <div class="text-container p-4 d-flex flex-column align-items-end">
             <h1 class="display-4 fw-semibold">
@@ -131,11 +132,11 @@
 
     <div class="container-xl">
       <h1 class="h-3 fw-semibold text-center  p-5">
-        How Do <span class="text-secondary">We Work?</span>
+        How Do <span class="text-primary">We Work?</span>
       </h1>    
       <div class="row hstack g-4">
         <div class="col-md-4 d-flex gap-4">
-          <i class="fas fa-1 fa-3x text-primary"></i>
+          <i class="fas fa-1 fa-3x text-secondary"></i>
           <div>
             <h5 class="fw-bold">Register Online and Schedule Appointment</h5>
             <p class="text-muted">
@@ -155,7 +156,7 @@
         </div>
 
         <div class="col-md-4 d-flex gap-4">
-          <i class="fas fa-3 fa-3x text-primary"></i>
+          <i class="fas fa-3 fa-3x text-secondary"></i>
           <div>
             <h5 class="fw-bold">Seamless Treatment Experience</h5>
             <p class="text-muted">
@@ -168,16 +169,16 @@
   </section>
 
     <!-- Cards -->
-    <section class="cards-section bg-light pb-5">  
+    <section class="cards-section bg-light pb-3">  
       <div class="container-xl">
         <h1 class="h-3 fw-semibold text-center  p-5">
-          Why<span class="text-secondary"> Choose </span>Us?
+          Why<span class="text-primary"> Choose </span>Us?
         </h1>    
-        <div class="row hstack g-4">
+        <div class="row ">
           
-          <div class="col-md-3 d-flex gap-4">
-            <div class="card shadow-lg">
-              <div class="card-body text-center">
+          <div class="col-lg-3 col-md-6  d-flex gap-4">
+            <div class="card shadow-lg rounded-4 mb-3">
+              <div class="card-body text-center mt-3">
               <i class="fas fa-phone fa-3x text-secondary d-block"></i>
               <div class="card-body">
                 <h5 class="card-title fw-semibold">Dedicated Multi-lingual Relationship Manager</h5>
@@ -187,38 +188,94 @@
             </div>
           </div>
   
-          <div class="col-md-3 d-flex gap-4">
-            <div class="card shadow-lg">
-              <div class="card-body text-center">
+          <div class="col-lg-3 col-md-6  d-flex gap-4">
+            <div class="card shadow-lg rounded-4 mb-3">
+              <div class="card-body text-center mt-3">
               <i class="fas fa-user-doctor fa-3x text-secondary d-block"></i>
               <div class="card-body">
-                <h5 class="card-title fw-semibold">Dedicated Multi-lingual Relationship Manager</h5>
-                <p class="text-muted small">We assign a single point of contact in your language for all your dealings with the hospital/airport/taxi/local tourism.</p>
+                <h5 class="card-title fw-semibold">Priority Treatment and Simplicity</h5>
+                <p class="text-muted small">Experience no waiting time during doctor consultations, as we meticulously manage your entire journey – from tracking consultations and billing to follow-up emails, health insurance, and accommodation arrangements.</p>
               </div>
               </div>
             </div>
           </div>
   
-          <div class="col-md-3 d-flex gap-4">
-            <div class="card shadow-lg">
-              <div class="card-body text-center">
+          <div class="col-lg-3 col-md-6  d-flex gap-4">
+            <div class="card shadow-lg rounded-4 mb-3">
+              <div class="card-body text-center mt-3">
               <i class="fas fa-file-shield fa-3x text-secondary d-block"></i>
               <div class="card-body">
-                <h5 class="card-title fw-semibold">Dedicated Multi-lingual Relationship Manager</h5>
-                <p class="text-muted small">We assign a single point of contact in your language for all your dealings with the hospital/airport/taxi/local tourism.</p>
+                <h5 class="card-title fw-semibold">Secure and Safe</h5>
+                <p class="text-muted small">Rest assured, your documents and doctor-patient information are handled with the utmost confidentiality, ensuring your privacy and peace of mind.</p>
               </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-3 d-flex gap-4">
-            <div class="card shadow-lg">
-              <div class="card-body text-center">
+          <div class="col-lg-3 col-md-6  d-flex gap-4">
+            <div class="card shadow-lg rounded-4 mb-3">
+              <div class="card-body text-center mt-3">
               <i class="fas fa-id-card fa-3x text-secondary d-block"></i>
               <div class="card-body">
                 <h5 class="card-title fw-semibold">Dedicated Multi-lingual Relationship Manager</h5>
-                <p class="text-muted small">We assign a single point of contact in your language for all your dealings with the hospital/airport/taxi/local tourism.</p>
+                <p class="text-muted small">
+Our patient care team is at your service 24/7, providing awesome, personalized care in multiple languages. Our goal is to ensure you have a delightful and stress-free experience.</p>
               </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div id="treatments"></div>
+    </section>
+
+
+    <!-- Treatment Cards -->
+    <section class="cards-section bg-light pb-8">  
+      <div class="container-xl">
+        <h1 class="h-3 fw-semibold text-center  p-5" id="treatments">
+          Select your<span class="text-primary"> Treatment </span>
+        </h1>    
+
+        <div class="row ">  
+
+          <div class="col-md-4 d-flex gap-4">  
+            <div class="card shadow-lg rounded-4 mb-3 w-100">
+              <div class="card-body mt-3 w-100">
+                <img src="images/new/treatment4.jpg" style="height: 30vh; object-fit: cover;" class="card-img-top mb-3" alt="...">     
+                <h5 class="card-title fw-semibold">Total Hip Replacement (Unilateral)</h5>
+                <p class="text-muted"> <i class="fas fa-stethoscope fa-1.5x"></i>  Dr. Subhash Jangid</p>
+                <p class="text-muted"> <i class="fas fa-calendar fa-1.5x"></i>  5 days</p>
+                <!-- <p class="text-muted small">We assign a single point of contact in your language for all your dealings with the hospital/airport/taxi/local tourism.</p> -->
+                <button class="btn btn-primary btn-block  w-100 p-2 fw-semibold text-white"> Explore Treatments</button>
+              </div>
+            </div>
+          </div>
+  
+      <div class="col-md-4 d-flex gap-4">  
+            <div class="card shadow-lg rounded-4 mb-3 w-100">
+              <div class="card-body mt-3 w-100">
+                <img src="images/new/treatment5.jpg" style="height: 30vh; object-fit: cover;" class="card-img-top mb-3" alt="...">     
+                <h5 class="card-title fw-semibold">Total Hip Replacement (Bilateral)</h5>
+                <p class="text-muted"> <i class="fas fa-stethoscope fa-1.5x"></i>  Dr. Subhash Jangid</p>
+                <p class="text-muted"> <i class="fas fa-calendar fa-1.5x"></i>  7 days</p>
+                <!-- <p class="text-muted small">We assign a single point of contact in your language for all your dealings with the hospital/airport/taxi/local tourism.</p> -->
+                <button class="btn btn-primary btn-block  w-100 p-2 fw-semibold text-white"> Explore Treatments</button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 d-flex gap-4">  
+            <div class="card shadow-lg rounded-4 mb-3 w-100">
+              <div class="card-body mt-3 w-100">
+                <img src="images/new/treatment3.jpg" style="height: 30vh; object-fit: cover;" class="card-img-top mb-3" alt="...">     
+                <h5 class="card-title fw-semibold">Brest Cancer Surgery</h5>
+                <p class="text-muted"> <i class="fas fa-stethoscope fa-1.5x"></i>  Dr. Niranjan Naik</p>
+                <p class="text-muted"> <i class="fas fa-calendar fa-1.5x"></i>  7 days</p>
+                <!-- <p class="text-muted small">We assign a single point of contact in your language for all your dealings with the hospital/airport/taxi/local tourism.</p> -->
+                <button class="btn btn-primary btn-block  w-100 p-2 fw-semibold text-white"> Explore Treatments</button>
               </div>
             </div>
           </div>
@@ -229,94 +286,30 @@
     </section>
 
 
-    
-
-      <!-- Practice -->
-
-      <!-- Grid -->
-  <div class="container">
-
-    <h1 mt-5>Ebook Website</h1>
-    <button class="btn btn-primary">Check</button>
-    <button class="btn btn-secondary">Check</button>
-    <button class="btn btn-outline-primary">Check</button>
-    <button class="btn btn-outline-primary">Check</button>
-
-    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate!</h1>
-    <div class="row">
-      <div class="col-md-3 border bg-light text-center p-2">
-        Lorem ipsum dolor sit amet.
-      </div>
-      <div class="col-md-3 border bg-light">
-        Lorem ipsum dolor sit amet.
-      </div>
-      <div class="col-md-3 border bg-light">
-        Lorem ipsum dolor sit amet.
-      </div>
-      <div class="col-md-3 border bg-light">
-        Lorem ipsum dolor sit amet.
-      </div>
-      <div class="col-md-3 border bg-light">
-        Lorem ipsum dolor sit amet.
-      </div>
-    </div>
-  </div>
-
-  <!-- Simple Form -->
-  <form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-      <label for="exampleDropdown" class="">Select an Option</label>
-      <select class="form-select" id="exampleDropdown" aria-label="Default select example">
-          <option selected>Choose an option</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-      </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-
-  <!-- Simple Form in Grid -->
-    <div class="container mt-5 bg-transparent">
-      <form>
-          <div class="row border rounded-5 m-5 p-5">
-              <!-- Column 1 -->
-              <div class=" col-lg-3 border mb-3">
-                  <label for="input1" class="form-label">Input 1</label>
-                  <input type="text" class="form-control" id="input1">
-              </div>
-              <!-- Column 2 -->
-              <div class=" col-lg-3 border mb-3">
-                  <label for="input2" class="form-label fw-semibold">Input 2</label>
-                  <input type="text" class="form-control" id="input2">
-              </div>
-              <!-- Column 3 -->
-              <div class=" col-lg-3 border mb-3">
-                  <label for="input3" class="form-label">Input 3</label>
-                  <select class="form-select" id="treatmentDropdown" aria-label="Default select example">
-                    <option selected>Select Treatment</option>
-                    <option value="1">Dermal Fillers</option>
-                    <option value="2">Liposuction</option>
-                    <option value="3">Laser Resurfacing</option>
-                  </select>
-              </div>
-              <!-- Column 4 -->
-              <div class=" col-lg-3 border mb-3 d-flex justify-content-center align-items-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+      <!-- Footer -->
+    <footer class="border-top border-primary bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link link-light">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link link-light">Details</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link link-light">Contact</a>
+              </li>
+            </ul>
           </div>
-          
-      </form>
-  </div>
+          <div class="col-md-4">
+            <p class="text-end d-none d-md-block">Copyright &copy; Blog Mastery 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 
 
   
